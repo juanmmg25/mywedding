@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Contenedor centrado */
+.center-container {
+  text-align: center;
+}
+
+
+.btn-boda:hover {
+  transform: scale(1.05);
+}
+
+/* Animación destello */
+.flash {
+  animation: flashAnim 0.8s ease-out;
+}
+
+@keyframes flashAnim {
+  0% { box-shadow: 0 0 0px #fff; }
+  50% { box-shadow: 0 0 50px #fff; }
+  100% { box-shadow: 0 0 0px #fff; }
+}
+
+/* Video oculto y visible */
+.video-hidden {
+  display: none;
+}
+#videoDesktop, #videoMobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 769px) {
+  #videoDesktop { display: block; }
+}
+
+@media (max-width: 768px) {
+  #videoMobile { display: block; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Video pantalla completa */
+#videoIntro {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none; /* evita interacción */
+}
+
+/* Rosas flotando */
+.roses {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background-image: url('https://pngimg.com/uploads/rose/rose_PNG667.png');
+  background-size: 80px;
+  animation: floatRoses 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes floatRoses {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 1000px; }
+}
+
+
+/* Reseteo */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* El enlace ocupa toda la pantalla y tiene la imagen de fondo */
+.fondo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/abrir_inv_horizontal.png');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+}
+
+/* Imagen para móvil */
+@media (max-width: 768px) {
+  .fondo-link {
+    background-image: url('../img/abrir_inv_vertical.png');
+    transform: scale(1.05);
+  }
+}
