@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Wedding </title>
+    <title>Wedding I & J</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon_wedding.ico">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -73,8 +73,9 @@
                                 <div class="hero__caption text-center d-flex align-items-center caption-bg">
                                     <div class="circle-caption">
                                         <span data-animation="fadeInUp" data-delay=".3s">Oct 25 - 2026</span>
-                                        <h1 data-animation="fadeInUp" data-delay=".5s">Juan & Isabel</h1>
+                                        <h1 data-animation="fadeInUp" data-delay=".5s">Isabel & Juan</h1>
                                         <p data-animation="fadeInUp" data-delay=".9s">¡Nos vamos a casar!</p>
+                                        <p data-animation="fadeInUp" data-delay=".9s">3:00 pm</p>
                                     </div>
                                 </div>
                             </div>
@@ -101,13 +102,13 @@
                         <div class="story-caption">
                             <img src="assets/img/our_story/flower_right.png" alt="">
                             <h3>Nosotros</h3>
-                            <p class="story1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="story2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
-                                iste natus error sit voluptatem accusantium doloremque laudan.</p>
+                            <p class="story1">
+                                Dos corazones se unen en amor y desde hace más de 3 años compartimos momentos inolvidables. Hoy nos casamos y hacemos de este amor un Eterno Juntos.
+                                Hubo momentos que lo incierto quería apoderarse de nosotros pero Dios nos ha dado fuerza y valor para saber afrontar cada situación.
+                                Estamos seguros que este es nuestro camino y que nuestro amor prevalece para siempre hasta el fin de nuestros días.
+                            </p>
+                            <p class="story2">Cuando nos hicimos novios, supimos que algo especial estaba por suceder y ustedes serán parte de esta historia que apenas comienza.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +170,7 @@
                 <section class="contact-sections">
                     <div class="d-area">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sco!4v1772072173232!5m2!1ses!2sco!6m8!1m7!1she7nApivd_EVT2N2QIao7Q!2m2!1d4.890227000946495!2d-74.18052962189182!3f358.4182016804656!4f-2.182788179526284!5f0.7820865974627469"
+                            src="https://www.google.com/maps/embed?pb=!4v1773024239367!6m8!1m7!1szkpyYqPEh-AXE7Hm_CUAvg!2m2!1d4.889986581104396!2d-74.18060155486808!3f124.09819256783491!4f-0.3375559592427635!5f0.7820865974627469"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -202,51 +203,63 @@
                             </div>
 
 
-                            <form id="contact-form" action="#" method="#">
+                            <form id="contact-form">
 
-                                <iframe
-                                    src="https://docs.google.com/forms/d/e/1FAIpQLSdalBLON187ZC4RLj7eGmoMx9iGjjkyHTLVfjSgEyojeN1UlQ/viewform?embedded=true"
-                                    width="100%" height="700" frameborder="0" marginheight="0"
-                                    marginwidth="0">Cargando…
-                                </iframe>
-
-
-                                <!-- <div class="row">
+                                <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-box mb-30">
-                                            <input type="text" name="name" placeholder="Name">
+                                            <label>Ingresa tu nombre completo</label>
+                                            <input type="text" id="nombre" placeholder="Nombre completo aquí" required>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-box subject-icon mb-30">
-                                            <input type="Email" name="subject" placeholder="Email">
-                                        </div>
-                                    </div>
+
                                     <div class="col-lg-12 mb-30">
                                         <div class="select-itms">
-                                            <select name="select" id="select2">
-                                                <option value="">1 Guest</option>
-                                                <option value="">2 Guest</option>
-                                                <option value="">3 Guest</option>
-                                                <option value="">4 Guest</option>
+                                            <label>Confirma tu asistencia</label>
+                                            <select id="asistencia">
+                                                <option value="Sí, confirmo asistencia">Sí, confirmo asistencia</option>
+                                                <option value="No puedo asistir">No, no puedo asistir</option>
                                             </select>
                                         </div>
                                     </div>
+
                                     <div class="col-lg-12">
                                         <div class="form-box message-icon mb-30">
-                                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                            <label>Detalles / Acompañantes</label>
+                                            <textarea id="mensaje" placeholder="Ej: Asisto con mi esposa y mis hijos"></textarea>
                                         </div>
+
                                         <div class="submit-info">
-                                            <button class="btn2" type="submit">R.S.V.P</button>
+                                            <button class="btn2" type="submit">Enviar confirmación</button>
                                         </div>
                                     </div>
-                                </div> -->
-
-
-
-
+                                </div>
 
                             </form>
+
+
+                            <script>
+                                document.getElementById("contact-form").addEventListener("submit", function (e) {
+
+                                    e.preventDefault();
+
+                                    var nombre = document.getElementById("nombre").value;
+                                    var asistencia = document.getElementById("asistencia").value;
+                                    var mensaje = document.getElementById("mensaje").value;
+
+                                    var texto = "Confirmación de asistencia%0A%0A" +
+                                        "Nombre: " + nombre + "%0A" +
+                                        "Asistencia: " + asistencia + "%0A" +
+                                        "Mensaje: " + mensaje;
+
+                                    var telefono = "573043536912";
+
+                                    var url = "https://wa.me/" + telefono + "?text=" + texto;
+
+                                    window.open(url, "_blank");
+
+                                });
+                            </script>
                             <!-- Shape inner Flower -->
                             <div class="shape-inner-flower">
                                 <img src="assets/img/flower/form-smoll-left.png" class="top1" alt="">
@@ -276,15 +289,48 @@
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
                             <img src="assets/img/memories/section_tittle_flowre.png" alt="">
-                            <h2>CÓDIGO DE VESTIMENTA</h2>
+                            <h2>INDICACIONES</h2>
                         </div>
                     </div>
                 </div>
                 <div class="brand-active brand-border">
                     <div class="single-brand">
-                        <img src="assets/img/service/brand1.jpg" alt="">
+                        <img src="assets/img/foot/no_azul_petroleo.png" width="100%" alt="">
                     </div>
+
                     <div class="single-brand">
+                        <img src="assets/img/foot/no_blanco.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/se_puntual.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/lluvia_sobres.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/hacienda_subachoque.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/no_blanco.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/se_puntual.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/lluvia_sobres.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/hacienda_subachoque.png" width="100%" alt="">
+                    </div>
+                    
+                    <!-- <div class="single-brand">
                         <img src="assets/img/service/brand2.jpg" alt="">
                     </div>
                     <div class="single-brand">
@@ -298,7 +344,9 @@
                     </div>
                     <div class="single-brand">
                         <img src="assets/img/service/brand3.jpg" alt="">
-                    </div>
+                    </div> -->
+
+
                 </div>
             </div>
         </div>
@@ -408,7 +456,7 @@
                                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                         Copyright &copy;
                                         <script>document.write(new Date().getFullYear());</script> Hecho con amor |
-                                        Juan Moreno & Isabel Romero <i class="ti-heart" aria-hidden="true"></i>
+                                        Isabel Romero & Juan Moreno <i class="ti-heart" aria-hidden="true"></i>
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     </p>
                                 </div>
