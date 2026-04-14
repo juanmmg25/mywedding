@@ -65,13 +65,18 @@
         <!-- Slider Area Start-->
         <div class="slider-area ">
             <div class="slider-active">
-                <div class="single-slider slider-height hero-overly d-flex align-items-center"
-                    style="background-image: url('assets/img/principal/preboda-ejemplo.JPG');">
-                    <div class="container">
+                <div class="single-slider slider-height hero-overly d-flex align-items-center position-relative">
+
+                    <!-- Imagen de fondo real -->
+                    <img src="./assets/img/principal/preboda-ejemplo.JPG" alt="Preboda"
+                        class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; z-index: 1;">
+
+                    <!-- Contenido encima -->
+                    <div class="container position-relative" style="z-index: 2;">
                         <div class="row d-flex align-items-center">
-                            <div class="col-lg-7 col-md-9 ">
+                            <div class="col-lg-7 col-md-9">
                                 <div class="hero__caption text-center d-flex align-items-center caption-bg">
-                                    <div class="circle-caption" style="border: #33CCFF 0px solid; font-size: 1px;">
+                                    <div class="circle-caption">
                                         <span data-animation="fadeInUp" data-delay=".3s">Oct 25 - 2026</span>
                                         <h1 data-animation="fadeInUp" data-delay=".5s">Isabel & Juan</h1>
                                         <p data-animation="fadeInUp" data-delay=".9s">¡Nos vamos a casar!</p>
