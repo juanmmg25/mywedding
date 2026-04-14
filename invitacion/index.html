@@ -71,7 +71,7 @@
                         <div class="row d-flex align-items-center">
                             <div class="col-lg-7 col-md-9 ">
                                 <div class="hero__caption text-center d-flex align-items-center caption-bg">
-                                    <div class="circle-caption">
+                                    <div class="circle-caption" style="border: #33CCFF 0px solid; font-size: 1px;">
                                         <span data-animation="fadeInUp" data-delay=".3s">Oct 25 - 2026</span>
                                         <h1 data-animation="fadeInUp" data-delay=".5s">Isabel & Juan</h1>
                                         <p data-animation="fadeInUp" data-delay=".9s">¡Nos vamos a casar!</p>
@@ -110,7 +110,19 @@
                                 Estamos seguros que este es nuestro camino y que nuestro amor prevalece para siempre
                                 hasta el fin de nuestros días.
                             </p>
-                            <p class="story2">Cuando nos hicimos novios, supimos que algo especial estaba por suceder y
+                            <p class="story2">
+                                TWO es una canción que habla de un amor profundo y sin medida, forjando así, un vinculo
+                                eterno entre dos personas.
+                                Algo tan grande como un maremoto o tan inmenso como las olas del mar es lo que sentimos
+                                el uno por el otro y solo queremos
+                                ser TWO como un equipo que se apoya, se cuida y se ama incondicionalmente.
+
+                            <p style="text-align: end;">- Juan</p>
+                            </p>
+                            <br>
+                            <p class="story3">Isa
+                            </p>
+                            <p class="story4">Cuando nos hicimos novios, supimos que algo especial estaba por suceder y
                                 ustedes serán parte de esta historia que apenas comienza.
                             </p>
                         </div>
@@ -308,7 +320,7 @@
                     </div>
 
                     <div class="single-brand">
-                        <img src="assets/img/foot/se_puntual.png" width="100%" alt="">
+                        <img src="assets/img/foot/hora_entrada.png" width="100%" alt="">
                     </div>
 
                     <div class="single-brand">
@@ -317,6 +329,10 @@
 
                     <div class="single-brand">
                         <img src="assets/img/foot/hacienda_subachoque.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/vestimenta.png" width="100%" alt="">
                     </div>
 
                     <div class="single-brand">
@@ -324,7 +340,11 @@
                     </div>
 
                     <div class="single-brand">
-                        <img src="assets/img/foot/se_puntual.png" width="100%" alt="">
+                        <img src="assets/img/foot/tipo_evento.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/hora_entrada.png" width="100%" alt="">
                     </div>
 
                     <div class="single-brand">
@@ -333,6 +353,14 @@
 
                     <div class="single-brand">
                         <img src="assets/img/foot/hacienda_subachoque.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/tipo_evento.png" width="100%" alt="">
+                    </div>
+
+                    <div class="single-brand">
+                        <img src="assets/img/foot/vestimenta.png" width="100%" alt="">
                     </div>
 
                     <!-- <div class="single-brand">
@@ -512,17 +540,34 @@
     <script src="./assets/js/main.js"></script>
 
 
-    <audio id="musicaFondo" autoplay loop>
+    <audio id="musicaFondo" loop playsinline>
         <source src="../music/video-musica-fondo-two_2.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
     </audio>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const audio = document.getElementById("musicaFondo");
-            audio.play().catch(error => {
-                console.log("La reproducción automática fue bloqueada, esperando interacción del usuario.");
-            });
+
+            // Intento de autoplay inmediato
+            function intentarReproducir() {
+                audio.play().then(() => {
+                    console.log("Audio reproduciéndose automáticamente");
+                }).catch(() => {
+                    console.log("Autoplay bloqueado, esperando interacción...");
+                });
+            }
+
+            intentarReproducir();
+
+            // Solución para iPhone / Safari (requiere interacción mínima)
+            function activarAudio() {
+                audio.play();
+                document.removeEventListener("click", activarAudio);
+                document.removeEventListener("touchstart", activarAudio);
+            }
+
+            document.addEventListener("click", activarAudio);
+            document.addEventListener("touchstart", activarAudio);
         });
     </script>
 

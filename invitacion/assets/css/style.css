@@ -2753,7 +2753,7 @@ hr {
 @media (max-width: 767px) {
     .slider-area .hero__caption .circle-caption {
         margin: 0;
-        padding-left: 22px
+        padding-left: 25px
     }
 }
 
@@ -2769,14 +2769,14 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-area .hero__caption .circle-caption span {
-        font-size: 18px;
+        font-size: 10px;
         margin-bottom: 7px
     }
 }
 
 @media (max-width: 767px) {
     .slider-area .hero__caption .circle-caption span {
-        font-size: 18px;
+        font-size: 10px;
         margin-bottom: 7px
     }
 }
