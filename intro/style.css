@@ -85,7 +85,7 @@ html, body {
   height: 100%;
 }
 
-/* El enlace ocupa toda la pantalla y tiene la imagen de fondo */
+/* El enlace ocupa toda la pantalla y tiene la imagen de fondo 
 .fondo-link {
   display: block;
   width: 100%;
@@ -94,12 +94,13 @@ html, body {
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
-}
+}*/
 
-/* Imagen para móvil */
+/* Imagen para móvil
 @media (max-width: 768px) {
   .fondo-link {
     background-image: url('../img/abrir_inv_vertical.png');
     transform: scale(1.05);
   }
 }
+*/

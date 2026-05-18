@@ -2652,7 +2652,7 @@ hr {
 .slider-area .hero__caption::before {
     position: absolute;
     content: "";
-    background-image: url(../img/hero/hero_circle_blue.png);
+    background-image: url(../img/hero/hero_circle_green.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 540px;
